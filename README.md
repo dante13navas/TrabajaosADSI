@@ -1,11 +1,12 @@
 TrabajaosADSI
 =============
 
- Todos los trabajos se subiran aqui se edita desde un interprete online 
-este es el final 
-bfb gbfdbfd
-esta   mrhfkjthv,5,
-estasefsg smfgm dfhfg
-laskhdishdfqjsdbhquw
-jfmjyfmjfh,jf,jyf,iyrt,iyt
-listo..
+Perdiente por realizar 
+1- envio diagrama de uso 
+2- Hojas ENprendimiento 
+
+
+La primera solo es compatir asi que no hay problema listo 
+la segunda es lo que iniciamos pero falta le dije a anita que nos ayudara con eso entonces 
+subire la info a penas la tenga listo
+Gracias buen fin de semana 
