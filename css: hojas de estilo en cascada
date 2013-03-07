@@ -1,0 +1,65 @@
+CSS :
+(HOJAS DE ESTILO EN CASCADA)
+La idea que se encuentra detrás del desarrollo de CSS es separar la estructura de un documento de su presentación.
+La información de estilo puede ser adjuntada como un documento separado o en el mismo documento HTML. En este último caso podrían definirse estilos generales en la cabecera del documento o en cada etiqueta particular mediante el atributo "<style>"
+
+CSS tiene una sintaxis muy sencilla, que usa unas cuantas palabras claves tomadas del inglés para especificar los nombres de sus selectores, propiedades y atributos. Una hoja de estilos CSS consta de 3 reglas. Cada regla consiste en uno o más selectores y un bloque de estilos con los estilos a aplicar para los elementos del documento que cumplan con el selector que les precede. Cada bloque de estilos se define entre llaves, y está formado por una o varias declaraciones de estilo con el formato propiedad:valor;.1
+En el CSS, los selectors marcarán qué elementos se verán afectados por cada bloque de estilo que les siga, pudiendo afectar a uno o varios elementos a la vez, en función de su tipo, nombre (name), ID, clase (class), posición dentro del Document Object Model,  
+Abajo puede verse un ejemplo de una parte de una hoja de estilos CSS:
+selector [, selector2, ...] [:pseudo-class][::pseudo-element] {
+ propiedad: valor;
+ [propiedad2: valor2;
+ ...]
+USO
+Por ejemplo, el elemento de HTML <h1> indica que un bloque de texto es un encabezamiento y que es más importante que un bloque etiquetado como <h2>. Versiones más antiguas de HTML permitían atributos extra dentro de la etiqueta abierta para darle formato (como el color o el tamaño de fuente). No obstante, cada etiqueta <h1> debía disponer de la información si se deseaba un diseño consistente para una página y, además, una persona que leía esa página con un navegador perdía totalmente el control sobre la visualización del texto.
+Cuando se utiliza CSS, la etiqueta <h1> no debería proporcionar información sobre cómo será visualizado, solamente marca la estructura del documento. La información de estilo, separada en una hoja de estilo, especifica cómo se ha de mostrar <h1>: color, fuente, alineación del texto, tamaño y otras características no visuales, como definir el volumen de un sintetizador de voz, por ejemplo.
+Por otro lado, antes de que estuviera disponible CSS, la única forma de componer espacialmente una página era el uso de tablas <table>. Aunque esta era una técnica cómoda y versátil, ello conllevaba el uso de un elemento con una semántica particular, y en el que la distribución de los datos no se ajustaban al flujo de la información que se obtenía en la vista desde los navegadores habituales, lo que redundaba en una merma en la accesibilidad a la página por parte de otros navegadores (orientados a personas con alguna deficiencia sensorial, o a ciertos dispositivos electrónicos).
+Mediante el uso de CSS, se ha permitido eliminar el uso de tablas para el diseño, usándolas solamente para la muestra de datos tabulados, si bien es cierto que obtener la versatilidad que ofrecía el diseño con tablas, es algo más complicado si no se usan.
+
+A.	Mediante CSS introducido por el autor del HTML:
+
+1. Un estilo en línea (online) es un método para insertar el lenguaje de estilo de página directamente dentro de una etiqueta HTML. El incrustar la descripción del formateo dentro del documento de la página Web, a nivel de código, se convierte en una manera larga, tediosa y poco elegante de resolver el problema de la programación de la página. 
+Este modo de trabajo se podría usar de manera ocasional si se pretende aplicar un formateo con prisa, al vuelo. No es todo lo claro o estructurado que debería ser, pero funciona.
+Dado que los clientes de correo electrónico no soportan las hojas de estilos externas, y que no existen estándares que los fabricantes de clientes de correo respeten para utilizar CSS en este contexto, la solución más recomendable para maquetar correos electrónicos, es utilizar CSS dentro de los propios elementos (online).
+1.	Una hoja de estilo interna, que es una hoja de estilo que está incrustada dentro de un documento HTML, dentro del elemento <head>, marcada por la etiqueta <style>. De esta manera se obtiene el beneficio de separar la información del estilo del código HTML propiamente dicho. Se puede optar por copiar la hoja de estilo incrustada de una página a otra (esta posibilidad es difícil de ejecutar si se desea para guardar las copias sincronizadas). En general, la única vez que se usa una hoja de estilo interna, es cuando se quiere proporcionar alguna característica a una página Web en un simple fichero, por ejemplo, si se está enviando algo a la página Web.
+
+2.	Una hoja de estilo externa, es una hoja de estilo que está almacenada en un archivo diferente al archivo donde se almacena el código HTML de la página Web. Esta es la manera de programar más potente, porque separa completamente las reglas de formateo para la página HTML de la estructura básica de la página.
+
+B.	Estilos CSS introducidos por el usuario que ve el documento, mediante un archivo CSS especificado mediante las configuraciones del navegador, y que sobreescribe los estilos definidos por el autor en una, o varias páginas web.
+C.	Los estilos marcados "por defecto" por los user agent, para diferentes elementos de un documento HTML, como por ejemplo, los enlaces.
+NIVELES:
+
+CSS se ha creado en varios niveles y perfiles.
+ Cada nivel de CSS se construye sobre el anterior, generalmente añadiendo funciones al previo.
+Los perfiles son, generalmente, parte de uno o varios niveles de CSS definidos para un dispositivo o interfaz particular. Actualmente, pueden usarse perfiles para dispositivos móviles, impresoras o televisiones.
+CSS1
+La primera especificación oficial de CSS, recomendada por la W3C fue CSS1, publicada en diciembre 1996, y abandonada en abril de 2008.
+
+Algunas de las funcionalidades que ofrece son:
+•	Propiedades de las Fuente, como tipo, tamaño, énfasis...
+•	Color de texto, fondos, bordes u otros elementos.
+•	Atributos del texto, como espaciado entre palabras, letras, líneas, etcétera.
+•	Alineación de textos, imágenes, tablas u otros.
+•	Propiedades de caja, como margen, borde, relleno o espaciado.
+•	Propiedades de identificación y presentación de listas.
+CSS2
+La especificación CSS2 fue desarrollada por la W3C y publicada como recomendación en mayo de 1998, y abandonada en abril de 2008.
+Como ampliación de CSS1, se ofrecieron, entre otras:
+•	Las funcionalidades propias de las capas (<div>) como de posicionamiento relativo/absoluto/fijo, niveles (z-index).
+•	El concepto de "media types",
+•	Soporte para las hojas de estilo auditivas
+•	Texto bidireccional, sombras.
+CSS 2.1
+La primera revisión de CSS2, usualmente conocida como "CSS 2.1", corrige algunos errores encontrados en CSS2, elimina funcionalidades poco soportadas o inoperables en los navegadores y añade alguna nueva especificación.
+De acuerdo al sistema de estandarización técnica de las especificaciones, CSS2.1 tuvo el estatus de "candidato" (candidate recommendation) 
+En abril de 2011, CSS 2.1 volvió a ser propuesta como candidata, y después de ser revisada por el W3C Advisory Committee, fue finalmente publicada como recomendación oficial el 7 de junio de 2011.
+CSS3
+A diferencia de CSS2, que fue una gran especificación que definía varias funcionalidades, CSS3 está dividida en varios documentos separados, llamados "módulos"
+
+Cada módulo añade nuevas funcionalidades a las definidas en CSS2, de manera que se preservan las anteriores para mantener la compatibilidad.
+Los trabajos en el CSS3, comenzaron a la vez que se publicó la recomendación oficial de CSS2, y los primeros borradores de CSS3 fueron liberados en junio de 1999.
+
+Debido a la modularización del CSS3, diferentes módulos pueden encontrarse en diferentes estadios de su desarrollo, de forma que a fechas de noviembre de 2011, hay alrededor de cincuenta módulos publicados, tres de ellos se convirtieron en recomendaciones oficiales de la W3C en 2011: "Selectores", "Espacios de nombres" y "Color".
+Algunos módulos, como "Fondos y colores", "Consultas de medios" o "Diseños multicolumna" están en fase de "candidatos", y considerados como razonablemente estables, a finales de 2011, y sus implementaciones en los diferentes navegadores son señaladas con los prefijos del motor del mismo.
+
+
